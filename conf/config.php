@@ -19,13 +19,13 @@
 	$schedule_rand = 10;			// rand for schedulers start, +0..X seconds
 
 	$do_diagnostic = true;
-	$log_file = '/tmp/errors.log';		// path to log file (comment or leave blank to disable logging)
+	$log_file = '/var/log/rutorrent/errors.log';		// path to log file (comment or leave blank to disable logging)
 
-	$saveUploadedTorrents = true;		// Save uploaded torrents to profile/torrents directory or not
+	$saveUploadedTorrents = false;		// Save uploaded torrents to profile/torrents directory or not
 	$overwriteUploadedTorrents = false;     // Overwrite existing uploaded torrents in profile/torrents directory or make unique name
 
-	$topDirectory = '/';			// Upper available directory. Absolute path with trail slash.
-	$forbidUserSettings = false;
+	$topDirectory = '/storage/raid6/main/';			// Upper available directory. Absolute path with trail slash.
+	$forbidUserSettings = true;
 
 	$scgi_port = 5000;
 	$scgi_host = "127.0.0.1";
@@ -37,7 +37,7 @@
 	// $scgi_port = 0;
 	// $scgi_host = "unix:///tmp/rpc.socket";
 
-	$XMLRPCMountPoint = "/RPC2";		// DO NOT DELETE THIS LINE!!! DO NOT COMMENT THIS LINE!!!
+	$XMLRPCMountPoint = "/rutorrent/RPC2";		// DO NOT DELETE THIS LINE!!! DO NOT COMMENT THIS LINE!!!
 
 	$pathToExternals = array(
 		"php" 	=> '',			// Something like /usr/bin/php. If empty, will be found in PATH.
