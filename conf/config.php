@@ -37,7 +37,8 @@
 	// $scgi_port = 0;
 	// $scgi_host = "unix:///tmp/rpc.socket";
 
-	$XMLRPCMountPoint = "/rutorrent/RPC2";		// DO NOT DELETE THIS LINE!!! DO NOT COMMENT THIS LINE!!!
+    //Using httprpc plugin, don't need this apaprently
+	//$XMLRPCMountPoint = "/rutorrent/RPC2";		// DO NOT DELETE THIS LINE!!! DO NOT COMMENT THIS LINE!!!
 
 	$pathToExternals = array(
 		"php" 	=> '',			// Something like /usr/bin/php. If empty, will be found in PATH.
